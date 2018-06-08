@@ -261,7 +261,7 @@ public class EventLoggingService : NSObject, URLSessionDelegate {
     public func logEvent(_ event: NSDictionary) {
         
         if (!self.started) {
-            DDLogWarn("EventLoggingService not started. Event will be recorded, but not posted")
+            DDLogDebug("EventLoggingService not started. Event will be recorded, but not posted")
         }
         
         let now = NSDate()
